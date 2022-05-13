@@ -1,0 +1,32 @@
+h1{
+    margin-left: 40%;
+    font-size: 30px;
+    font-weight: bold;
+}
+td{
+    font-size: 14px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+    text-align: center;
+}
+tr{
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+}
+tr:hover{
+    background-color: darkgray;
+}
+th{
+    font-size: 25px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 2px;
+    color: tomato;
+    text-align: center;
+    margin: 2px;
+}
