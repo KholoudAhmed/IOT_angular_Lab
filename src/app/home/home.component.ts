@@ -8,8 +8,8 @@ import { DiscountOffers } from '../Shared Classes and types/DiscountOffers';
 })
 export class HomeComponent implements OnInit {
 
-  storeName:string="Eman's store";
-  imageSrc = 'assets/store.png'  
+  storeName:string="Kholoud Ahmed Ibrahiem";
+  imageSrc = 'assets/store.jpg'  
   imageAlt = 'image'
   Discount:DiscountOffers=DiscountOffers.offerTwo;
   constructor() { }

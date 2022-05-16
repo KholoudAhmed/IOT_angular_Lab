@@ -12,14 +12,14 @@ export class ProductServiceService {
     this.ProductList=[
       {
         ID:1, 
-        Name:"bag",
+        Name:"skirt",
         Quantity:1,
         Price:100,
         Img:"img"
       },
       {
         ID:2, 
-        Name:"bag",
+        Name:"t-shirt",
         Quantity:1,
         Price:100,
         Img:"img"
@@ -30,11 +30,11 @@ export class ProductServiceService {
   GetAllProducts(){
     return this.ProductList;
   }
-  GetProductById(prdId:number){
-    for(var i=0; i<this.ProductList.length; i++){
-      if(this.ProductList[i].ID == prdId)
-        return this.ProductList[i];
-    }
-        return null;
-  }
+  // GetProductById(prdId:number){
+  //   for(var i=0; i<this.ProductList.length; i++){
+  //     if(this.ProductList[i].ID == prdId)
+  //       return this.ProductList[i];
+  //   }
+  //       return null;
+  // }
 }

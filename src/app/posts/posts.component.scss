@@ -1,32 +1,29 @@
 h1{
-    margin-left: 40%;
-    font-size: 30px;
+    margin-left: 10%;
+    font-size: 20px;
     font-weight: bold;
 }
 td{
     font-size: 14px;
-    border: 2px;
+    border: 1px;
     border-color: black;
     border-style: solid;
-    padding: 2px;
-    text-align: left;
+    padding: 1px;
 }
 tr{
-    border: 2px;
+    border: 1px;
     border-color: black;
     border-style: solid;
-    padding: 2px;
+    padding: 1px;
 }
-tr:hover{
-    background-color: darkgray;
-}
+
 th{
-    font-size: 25px;
-    border: 2px;
+    font-size: 10px;
+    border: 1px;
     border-color: black;
     border-style: solid;
-    padding: 2px;
-    color: tomato;
+    padding: 1px;
+    color: green;
     text-align: center;
-    margin: 2px;
+    margin: 1px;
 }

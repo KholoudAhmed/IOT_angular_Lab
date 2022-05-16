@@ -11,13 +11,13 @@ export class UsersComponent implements OnInit {
 
   constructor(private userService :UserServiceService) { }
   users:any[]=[]
-  errorMessage:any;
+  somethingWrong:any;
   ngOnInit(): void {
     //this.employees=this.employeeService.getEmployees();
     this.userService.getUsers().subscribe(data=>{
       this.users=data;
     },errorData=>{
-     this.errorMessage=errorData;
+     this.somethingWrong=errorData;
     })
   }
 

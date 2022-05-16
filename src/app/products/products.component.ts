@@ -49,29 +49,31 @@ export class ProductsComponent implements OnInit {
     this.selected = e.target.value
   }
   ClientName:string="";
-  nameOfClient="eman";
+  nameOfClient="Kholoud Ahmed Ibrahiem";
   IsPurshased:boolean=false;
   // myvar:boolean=false;
-  myvar:boolean=true;
+  flag:boolean=true;
   headers = ["ID", "Name", "Quantity", "Price", "Image"];
   items = [
-    {"name": "bag", "price":"100" , "Quantity":"100"},
-    {"name": "shoes", "price":"200" ,"Quantity":"300"},
-    {"name": "jacket", "price":"300" , "Quantity":"400"},
+    {"name": "dress", "price":"200" , "Quantity":"100"},
+    {"name": "skirt", "price":"200" ,"Quantity":"300"},
+    {"name": "t-shirt", "price":"300" , "Quantity":"400"},
+    {"name": "trousers", "price":"300" , "Quantity":"500"},
+    {"name": "mini-skirt", "price":"300" , "Quantity":"600"},
+    {"name": "shirts", "price":"300" , "Quantity":"700"},
   ]
   BtnClicked(){
     
-    this.myvar = !this.myvar;
+    this.flag = !this.flag;
   }
 
-  // @Output() childEvent = new EventEmitter();
 
   
 
   constructor(private productService :ProductServiceService) { }
   renderValues(){
     this.ProductList = this.productService.GetAllProducts();
-    this.myvar=!this.myvar;
+    this.flag=!this.flag;
   }
   ngOnInit(): void {
   }

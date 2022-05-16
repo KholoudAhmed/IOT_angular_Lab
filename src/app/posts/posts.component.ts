@@ -11,13 +11,12 @@ export class PostsComponent implements OnInit {
   constructor(private postService :PostServiceService) { }
 
   posts:any[]=[]
-  errorMessage:any;
+  somethingWrong:any;
   ngOnInit(): void {
-    //this.employees=this.employeeService.getEmployees();
     this.postService.getPosts().subscribe(data=>{
       this.posts=data;
     },errorData=>{
-     this.errorMessage=errorData;
+     this.somethingWrong=errorData;
     })
   }
 
